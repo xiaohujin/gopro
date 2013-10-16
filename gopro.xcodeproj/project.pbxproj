@@ -19,6 +19,10 @@
 		4635060E180E2F810006D7E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463505F6180E2F800006D7E5 /* UIKit.framework */; };
 		46350616180E2F810006D7E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46350614180E2F810006D7E5 /* InfoPlist.strings */; };
 		46350618180E2F810006D7E5 /* goproTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46350617180E2F810006D7E5 /* goproTests.m */; };
+		46350624180E2FF10006D7E5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46350622180E2FF10006D7E5 /* MainViewController.m */; };
+		46350625180E2FF10006D7E5 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46350623180E2FF10006D7E5 /* MainViewController.xib */; };
+		4635062A180E32010006D7E5 /* CloudyPlatformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46350628180E32010006D7E5 /* CloudyPlatformViewController.m */; };
+		4635062B180E32010006D7E5 /* CloudyPlatformViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46350629180E32010006D7E5 /* CloudyPlatformViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,12 @@
 		46350613180E2F810006D7E5 /* goproTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "goproTests-Info.plist"; sourceTree = "<group>"; };
 		46350615180E2F810006D7E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		46350617180E2F810006D7E5 /* goproTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = goproTests.m; sourceTree = "<group>"; };
+		46350621180E2FF10006D7E5 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = UI/MainViewController.h; sourceTree = "<group>"; };
+		46350622180E2FF10006D7E5 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = UI/MainViewController.m; sourceTree = "<group>"; };
+		46350623180E2FF10006D7E5 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = UI/MainViewController.xib; sourceTree = "<group>"; };
+		46350627180E32010006D7E5 /* CloudyPlatformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudyPlatformViewController.h; path = UI/CloudyPlatformViewController.h; sourceTree = "<group>"; };
+		46350628180E32010006D7E5 /* CloudyPlatformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudyPlatformViewController.m; path = UI/CloudyPlatformViewController.m; sourceTree = "<group>"; };
+		46350629180E32010006D7E5 /* CloudyPlatformViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CloudyPlatformViewController.xib; path = UI/CloudyPlatformViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +117,7 @@
 		463505F8180E2F800006D7E5 /* gopro */ = {
 			isa = PBXGroup;
 			children = (
+				46350626180E2FF70006D7E5 /* UI */,
 				46350601180E2F810006D7E5 /* AppDelegate.h */,
 				46350602180E2F810006D7E5 /* AppDelegate.m */,
 				46350604180E2F810006D7E5 /* Images.xcassets */,
@@ -142,6 +153,19 @@
 				46350614180E2F810006D7E5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46350626180E2FF70006D7E5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				46350621180E2FF10006D7E5 /* MainViewController.h */,
+				46350622180E2FF10006D7E5 /* MainViewController.m */,
+				46350623180E2FF10006D7E5 /* MainViewController.xib */,
+				46350627180E32010006D7E5 /* CloudyPlatformViewController.h */,
+				46350628180E32010006D7E5 /* CloudyPlatformViewController.m */,
+				46350629180E32010006D7E5 /* CloudyPlatformViewController.xib */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +244,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				463505FD180E2F810006D7E5 /* InfoPlist.strings in Resources */,
+				46350625180E2FF10006D7E5 /* MainViewController.xib in Resources */,
+				4635062B180E32010006D7E5 /* CloudyPlatformViewController.xib in Resources */,
 				46350605180E2F810006D7E5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				46350603180E2F810006D7E5 /* AppDelegate.m in Sources */,
+				4635062A180E32010006D7E5 /* CloudyPlatformViewController.m in Sources */,
+				46350624180E2FF10006D7E5 /* MainViewController.m in Sources */,
 				463505FF180E2F810006D7E5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -348,7 +376,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
